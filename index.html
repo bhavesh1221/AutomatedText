@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 id="text" class="txt">hello</h2>
+    <script>
+        const txt = document.getElementById('text')
+        const prog = "<>I'm a Developer! And I love to Code</>";
+        let indx = 1;
+        function writeText(){
+            text.innerText = prog.slice(0,indx)
+            indx++;
+            if(indx>prog.length){
+                indx=1;
+            }
+        }
+        setInterval(writeText,150)
+        
+    </script>
+</body>
+</html>
